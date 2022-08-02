@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B502EFA0882C53AEE674483B /* Pods_Picsum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18490AC76F3487CFE22FD6F /* Pods_Picsum.framework */; };
 		E2F8E66F28992F50000BF29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8E66E28992F50000BF29C /* AppDelegate.swift */; };
 		E2F8E67128992F50000BF29C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8E67028992F50000BF29C /* SceneDelegate.swift */; };
-		E2F8E67328992F50000BF29C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8E67228992F50000BF29C /* ViewController.swift */; };
 		E2F8E67628992F50000BF29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F8E67428992F50000BF29C /* Main.storyboard */; };
 		E2F8E67828992F58000BF29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F8E67728992F58000BF29C /* Assets.xcassets */; };
 		E2F8E67B28992F58000BF29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F8E67928992F58000BF29C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D93890B0BBFAB394AD6D29E /* Pods-Picsum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picsum.debug.xcconfig"; path = "Target Support Files/Pods-Picsum/Pods-Picsum.debug.xcconfig"; sourceTree = "<group>"; };
+		C3C47386EA6AFB4727653B1C /* Pods-Picsum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picsum.release.xcconfig"; path = "Target Support Files/Pods-Picsum/Pods-Picsum.release.xcconfig"; sourceTree = "<group>"; };
 		E2F8E66B28992F50000BF29C /* Picsum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picsum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F8E66E28992F50000BF29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F8E67028992F50000BF29C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E2F8E67228992F50000BF29C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2F8E67528992F50000BF29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2F8E67728992F58000BF29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F8E67A28992F58000BF29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2F8E67C28992F58000BF29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F18490AC76F3487CFE22FD6F /* Pods_Picsum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Picsum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B502EFA0882C53AEE674483B /* Pods_Picsum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A7F032960514E7B766EABF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F18490AC76F3487CFE22FD6F /* Pods_Picsum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C624989C96050CBB4467BC97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D93890B0BBFAB394AD6D29E /* Pods-Picsum.debug.xcconfig */,
+				C3C47386EA6AFB4727653B1C /* Pods-Picsum.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E2F8E66228992F50000BF29C = {
 			isa = PBXGroup;
 			children = (
 				E2F8E66D28992F50000BF29C /* Picsum */,
 				E2F8E66C28992F50000BF29C /* Products */,
+				C624989C96050CBB4467BC97 /* Pods */,
+				9A7F032960514E7B766EABF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,86 @@
 		E2F8E66D28992F50000BF29C /* Picsum */ = {
 			isa = PBXGroup;
 			children = (
+				E2F8E682289931F6000BF29C /* Screens */,
 				E2F8E66E28992F50000BF29C /* AppDelegate.swift */,
 				E2F8E67028992F50000BF29C /* SceneDelegate.swift */,
-				E2F8E67228992F50000BF29C /* ViewController.swift */,
 				E2F8E67428992F50000BF29C /* Main.storyboard */,
 				E2F8E67728992F58000BF29C /* Assets.xcassets */,
 				E2F8E67928992F58000BF29C /* LaunchScreen.storyboard */,
 				E2F8E67C28992F58000BF29C /* Info.plist */,
 			);
 			path = Picsum;
+			sourceTree = "<group>";
+		};
+		E2F8E682289931F6000BF29C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E2F8E68428993206000BF29C /* Favourite */,
+				E2F8E68328993200000BF29C /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E2F8E68328993200000BF29C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E2F8E6872899322B000BF29C /* Model */,
+				E2F8E68628993225000BF29C /* View */,
+				E2F8E6852899321D000BF29C /* View Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E2F8E68428993206000BF29C /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				E2F8E68A28993240000BF29C /* View Model */,
+				E2F8E6892899323B000BF29C /* View */,
+				E2F8E68828993235000BF29C /* Model */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		E2F8E6852899321D000BF29C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		E2F8E68628993225000BF29C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2F8E6872899322B000BF29C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2F8E68828993235000BF29C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2F8E6892899323B000BF29C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2F8E68A28993240000BF29C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2F8E67F28992F58000BF29C /* Build configuration list for PBXNativeTarget "Picsum" */;
 			buildPhases = (
+				E0865910E7FFB3DEA65C35AC /* [CP] Check Pods Manifest.lock */,
 				E2F8E66728992F50000BF29C /* Sources */,
 				E2F8E66828992F50000BF29C /* Frameworks */,
 				E2F8E66928992F50000BF29C /* Resources */,
+				08743323E1CA6A0DF8EF0481 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +228,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08743323E1CA6A0DF8EF0481 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Picsum/Pods-Picsum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Picsum/Pods-Picsum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Picsum/Pods-Picsum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0865910E7FFB3DEA65C35AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Picsum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2F8E66728992F50000BF29C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2F8E67328992F50000BF29C /* ViewController.swift in Sources */,
 				E2F8E66F28992F50000BF29C /* AppDelegate.swift in Sources */,
 				E2F8E67128992F50000BF29C /* SceneDelegate.swift in Sources */,
 			);
@@ -284,11 +420,13 @@
 		};
 		E2F8E68028992F58000BF29C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D93890B0BBFAB394AD6D29E /* Pods-Picsum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Picsum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,6 +441,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhaval.Picsum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,11 +450,13 @@
 		};
 		E2F8E68128992F58000BF29C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3C47386EA6AFB4727653B1C /* Pods-Picsum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Picsum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,6 +471,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhaval.Picsum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
